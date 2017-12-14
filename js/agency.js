@@ -47,4 +47,12 @@
     $(".navbar").removeClass("d-none");
   })
 
+  //remove spinner
+  var loadingSpinner = function(){
+    $( "html" ).removeClass( "loading" );
+  }
+  setTimeout(function(){
+    loadingSpinner();
+  }, 2000);
+
 })(jQuery); // End of use strict

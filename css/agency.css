@@ -509,3 +509,31 @@ ul.social-buttons {
     background-color: #212529; }
     ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
       background-color: #fed136; }
+
+html {
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s; }
+
+html, body {
+  /* For the loading indicator to be vertically centered ensure */
+  /* the html and body elements take up the full viewport */
+  min-height: 100%; }
+
+html.loading {
+  /* Replace #333 with the background-color of your choice */
+  /* Replace loading.gif with the loading image of your choice */
+  background: #fed136 url("../img/bus.png") no-repeat fixed center;
+  /* Ensures that the transition only runs in one direction */
+  -webkit-transition: background-color 0;
+  transition: background-color 0; }
+
+body {
+  -webkit-transition: opacity 0.7s ease-in;
+  transition: opacity 0.7s ease-in; }
+
+html.loading body {
+  /* Make the contents of the body opaque during loading */
+  opacity: 0;
+  /* Ensures that the transition only runs in one direction */
+  -webkit-transition: opacity 0;
+  transition: opacity 0; }
