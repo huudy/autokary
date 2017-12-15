@@ -8,7 +8,7 @@
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top - 54)
+          scrollTop: (target.offset().top)
         }, 1000, "easeInOutExpo");
         return false;
       }
@@ -23,7 +23,7 @@
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
-    offset: 54
+    offset: 0
   });
 
   // Collapse Navbar
@@ -54,5 +54,13 @@
   setTimeout(function(){
     loadingSpinner();
   }, 2000);
+
+  //animated bg
+  $('.masthead').vide({
+    mp4: "mp4/bg.mp4",
+    poster: "img/bg-mobile-fallback.jpg"
+  }, {
+    posterType: 'jpg'
+  });
 
 })(jQuery); // End of use strict
