@@ -2,11 +2,11 @@
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url('../img/yellow-bus.jpg');
+  background-image: url('../img/bus/volvo-cover.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  //opacity: 0.9;
+  opacity: 0.9;
   @include background-cover;
   .intro-text {
     padding-top: 150px;

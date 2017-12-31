@@ -133,10 +133,11 @@ body {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/yellow-bus.jpg");
+  background-image: url("../img/bus/volvo-cover.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
+  opacity: 0.9;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -195,7 +196,7 @@ header.masthead {
       -moz-transition: all ease 0.5s;
       transition: all ease 0.5s;
       opacity: 0;
-      background: rgba(254, 209, 54, 0.9); }
+      background: rgba(93, 159, 235, 0.9); }
       #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
         opacity: 1; }
       #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
@@ -440,7 +441,7 @@ header.masthead {
     margin-top: 0; }
 
 section#contact {
-  background-color: #28a745;
+  background-color: #5889bd;
   background-image: url("../img/map-image.png");
   background-repeat: no-repeat;
   background-position: center; }
