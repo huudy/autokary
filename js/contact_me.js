@@ -60,7 +60,7 @@ $(function() {
     },
     filter: function() {
       return $(this).is(":visible");
-    },
+    }
   });
 
   $("a[data-toggle=\"tab\"]").click(function(e) {
