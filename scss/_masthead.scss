@@ -8,9 +8,11 @@ header.masthead {
   background-position: center center;
   opacity: 0.9;
   @include background-cover;
+
   .intro-text {
     padding-top: 150px;
     padding-bottom: 100px;
+
     .intro-lead-in {
       font-size: 22px;
       font-style: italic;
@@ -18,6 +20,7 @@ header.masthead {
       margin-bottom: 25px;
       @include serif-font;
     }
+
     .intro-heading {
       font-size: 50px;
       font-weight: 700;
@@ -27,11 +30,13 @@ header.masthead {
     }
   }
 }
+
 @media(min-width:768px) {
   header.masthead {
     .intro-text {
       padding-top: 300px;
       padding-bottom: 200px;
+
       .intro-lead-in {
         font-size: 40px;
         font-style: italic;
@@ -39,6 +44,7 @@ header.masthead {
         margin-bottom: 25px;
         @include serif-font;
       }
+
       .intro-heading {
         font-size: 75px;
         font-weight: 700;

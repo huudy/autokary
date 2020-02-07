@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Agency v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2018 Start Bootstrap
+ * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
 body {
@@ -517,7 +517,8 @@ html {
   -webkit-transition: background-color 1s;
   transition: background-color 1s; }
 
-html, body {
+html,
+body {
   /* For the loading indicator to be vertically centered ensure */
   /* the html and body elements take up the full viewport */
   min-height: 100%; }
@@ -531,8 +532,8 @@ html.loading {
   transition: background-color 0; }
 
 body {
-  -webkit-transition: opacity 0.7s ease-in;
-  transition: opacity 0.7s ease-in; }
+  -webkit-transition: opacity 0.75s ease-in;
+  transition: opacity 0.75s ease-in; }
 
 html.loading body {
   /* Make the contents of the body opaque during loading */
