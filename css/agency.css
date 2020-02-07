@@ -541,3 +541,8 @@ html.loading body {
   /* Ensures that the transition only runs in one direction */
   -webkit-transition: opacity 0;
   transition: opacity 0; }
+
+span.emoji-bus {
+  font-size: 100px;
+  vertical-align: middle;
+  line-height: 1.25; }
