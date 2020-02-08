@@ -81,6 +81,7 @@
   aLangKeys['en'] = new Array();
   aLangKeys['ru'] = new Array();
   aLangKeys['de'] = new Array();
+  aLangKeys['pl'] = new Array();
   aLangKeys['en']['button'] = 'EN';
   aLangKeys['en']['peoples'] = 'Peoples >>';
   aLangKeys['en']['all_list'] = 'All list';
