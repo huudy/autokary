@@ -57,8 +57,8 @@
 
   // animated bg
   $('.masthead').vide({
-    mp4: "img/bus/benz.mp4",
-    poster: "img/bg-mobile-fallback.jpg"
+    mp4: "img/benz.mp4",
+    poster: "img/bus.jpg"
   }, {
     posterType: 'jpg'
   });

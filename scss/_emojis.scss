@@ -3,3 +3,11 @@ span.emoji-bus {
     vertical-align: middle;
     line-height: 1.25;
 }
+
+@media (max-width: 600px) {
+    span.emoji-bus {
+        font-size: 40px;
+        vertical-align: middle;
+        line-height: 1.25;
+    }
+}
