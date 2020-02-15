@@ -31,15 +31,48 @@
   <!-- <div class='fullscreenDiv'>
     <div class="center">Hello World</div>
 </div> -->
-  <!-- <div id="google_translate_element"></div> -->
+  <style>
+    #google_translate_element,
+    .skiptranslate {
+      display: none;
+    }
+
+    body {
+      top: 0 !important;
+    }
+  </style>
+  <div id="google_translate_element"></div>
   <script type="text/javascript">
+    // function googleTranslateElementInit() {
+    //   new google.translate.TranslateElement({
+    //     pageLanguage: 'pl',
+    //     includedLanguages: 'de,en',
+    //     layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT
+    //   }, 'google_translate_element');
+    // }
+
+    // function googleTranslateElementInit() {
+    //   new google.translate.TranslateElement({
+    //     pageLanguage: 'pl',
+    //     includedLanguages: 'en,pl',
+    //     autoDisplay: false
+    //   }, 'google_translate_element');
+    //   var a = document.querySelector("#google_translate_element select");
+    //   a.selectedIndex = 1;
+    //   a.dispatchEvent(new Event('change'));
+    // }
+
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({
         pageLanguage: 'pl',
-        includedLanguages: 'de,en',
-        layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT
+        includedLanguages: 'en,pl',
+        autoDisplay: false,
+        multilanguagePage: true
       }, 'google_translate_element');
     }
+    var a = document.querySelector("#google_translate_element select");
+    a.selectedIndex = 1;
+    a.dispatchEvent(new Event('change'));
   </script>
   <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
   </script>
@@ -72,7 +105,7 @@
             <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger button" href="#contact">Kontakt</a>
+            <a class="nav-link js-scroll-trigger button" href="#contact">Jezyk</a>
           </li>
         </ul>
       </div>
@@ -497,7 +530,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <span class="copyright">Copyright &copy; Wiktoria Autokary 2018</span>
+          <span class="copyright">Copyright &copy; Wiktoria Autokary 2020</span>
         </div>
         <div class="col-md-4">
           <ul class="list-inline social-buttons">

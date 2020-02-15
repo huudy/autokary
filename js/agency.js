@@ -57,7 +57,7 @@
 
   // animated bg
   $('.masthead').vide({
-    mp4: "img/benz.mp4",
+    mp4: "img/bg-vid.mp4",
     poster: "img/bus.jpg"
   }, {
     posterType: 'jpg'
