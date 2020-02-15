@@ -28,55 +28,6 @@
 
 
 <body id="page-top">
-  <!-- <div class='fullscreenDiv'>
-    <div class="center">Hello World</div>
-</div> -->
-  <style>
-    #google_translate_element,
-    .skiptranslate {
-      display: none;
-    }
-
-    body {
-      top: 0 !important;
-    }
-  </style>
-  <div id="google_translate_element"></div>
-  <script type="text/javascript">
-    // function googleTranslateElementInit() {
-    //   new google.translate.TranslateElement({
-    //     pageLanguage: 'pl',
-    //     includedLanguages: 'de,en',
-    //     layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT
-    //   }, 'google_translate_element');
-    // }
-
-    // function googleTranslateElementInit() {
-    //   new google.translate.TranslateElement({
-    //     pageLanguage: 'pl',
-    //     includedLanguages: 'en,pl',
-    //     autoDisplay: false
-    //   }, 'google_translate_element');
-    //   var a = document.querySelector("#google_translate_element select");
-    //   a.selectedIndex = 1;
-    //   a.dispatchEvent(new Event('change'));
-    // }
-
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({
-        pageLanguage: 'pl',
-        includedLanguages: 'en',
-        autoDisplay: false,
-        multilanguagePage: true
-      }, 'google_translate_element');
-    }
-    var a = document.querySelector("#google_translate_element");
-    a.selectedIndex = 1;
-    a.dispatchEvent(new Event('change'));
-  </script>
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-  </script>
-
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
@@ -102,7 +53,7 @@
             <a class="nav-link js-scroll-trigger tr" href="#contact" key="contact">Kontakt</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger lang tr" key="language" style="cursor: pointer;">PL 🇵🇱</a>
+            <a class="nav-link js-scroll-trigger lang tr" key="language" style="cursor: pointer;">EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿</a>
           </li>
         </ul>
       </div>
@@ -126,7 +77,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase tr" key="services">Usługi</h2>
-          <h3 class="section-subheading text-muted" key="travel">Podróżujemy dookoła świata!</h3>
+          <h3 class="section-subheading text-muted tr" key="travel">Podróżujemy dookoła świata!</h3>
         </div>
       </div>
       <div class="row text-center">
@@ -135,10 +86,9 @@
             <i class="fa fa-circle fa-stack-2x text-primary"></i>
             <i class="fa fa-car fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading" key="trips">Lokalne Wycieczki</h4>
-          <p class="text-muted" key="tripDesc">Korzystanie z naszych autobusow na liniach miedzymiastowych jest naprawde
-            udana decyzja.
-            Wiemy jak wazny jest comfort i zadowolenie naszych klientow dlatego
+          <h4 class="service-heading tr" key="trips">Lokalne Wycieczki</h4>
+          <p class="text-muted tr" key="tripDesc">Korzystanie z naszych autobusow na liniach miedzymiastowych jest
+            naprawde udana decyzja. Wiemy jak wazny jest comfort i zadowolenie naszych klientow dlatego
             chcemy wyjsc temu naprzeciw spelniajac najnowoczesniejsze wymogi
             Nasze autobusy sa swietne w swojej jakosci.
           </p>
@@ -148,21 +98,20 @@
             <i class="fa fa-circle fa-stack-2x text-primary"></i>
             <i class="fa fa-truck fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading" key="intl">Wycieczki Miedzynarodowe</h4>
-          <p class="text-muted" key="intlDesc">Pracuejmy z biurami podrozy z roznych krjaow Europy, Azji i Ameryki
-            takich jak
-            Nederlands, China, Germany, France, USA. We
-            provide them best quility service as we always step up to their smallest needs</p>
+          <h4 class="service-heading tr" key="intl">Wycieczki Miedzynarodowe</h4>
+          <p class="text-muted tr" key="intlDesc">Pracuejmy z biurami podrozy z roznych krjaow Europy, Azji i Ameryki
+            takich jak Nederlands, China, Germany, France, USA. Spelniamy najmniejsze oczekiwania naszych klientow
+            dlatego nasza wspolpraca owocuje.</p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <i class="fa fa-circle fa-stack-2x text-primary"></i>
             <i class="fa fa-bus fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading" key="🏫">Szkoly</h4>
-          <p class="text-muted" key="services">Ponadto swiadczynmy uslugi transportowe w porozumieniu z lokalnymi
-            szkolami. Glownie sa
-            to wycieczki lokalne lecz zdarzaja sie wyjazdy poza granice panstwa. Jestesmy naprwde elastyczni.</p>
+          <h4 class="service-heading tr" key="🏫">Szkoly</h4>
+          <p class="text-muted tr" key="🏫Desc">Ponadto swiadczynmy uslugi transportowe w porozumieniu z lokalnymi
+            szkolami. Glownie sa to wycieczki lokalne lecz zdarzaja sie wyjazdy poza granice panstwa. Jestesmy naprwde
+            elastyczni.</p>
         </div>
       </div>
     </div>
@@ -173,8 +122,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">FLOTA</h2>
-          <h3 class="section-subheading text-muted">Zasze staramy sie nie zostawac z tylu!</h3>
+          <h2 class="section-heading text-uppercase tr" key="fleet">FLOTA</h2>
+          <h3 class="section-subheading text-muted tr" key="fleetDesc">Zasze staramy sie nie zostawac z tylu!</h3>
         </div>
       </div>
       <div class="row">
@@ -475,8 +424,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Kontakt</h2>
-          <h3 class="section-subheading">Chcesz pojechac z nami na wycieczke?</h3>
+          <h2 class="section-heading text-uppercase tr" key="contact">Kontakt</h2>
+          <h3 class="section-subheading tr" key="contactDesc">Chcesz pojechac z nami na wycieczke?</h3>
         </div>
       </div>
       <div class="row">
@@ -508,22 +457,23 @@
                 </div>
               </div>
               <div class="clearfix"></div>
-              <div class="row">
-                <div class="col-lg-6 text-center">
-                  <a href="callto:508147171"><button class="btn btn-primary btn-xl text-uppercase">Number</button></a>
-                  <!-- <h5>Phone<br /><small><a href="tel:+48695824888">695-824-888</a></small>
-                  </h5> -->
-                </div>
+              <div class="col-lg-12 text-center">
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase"
+                  type="submit">Wyślij</button>
               </div>
-              <div class="row">
-                <div class="col-lg-6 text-center">
-                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase"
-                    type="submit">Wyślij</button>
-                </div>
-              </div>
+
             </div>
+          </form>
         </div>
-        </form>
+      </div>
+      <div class="row" style="padding-top: 10px;">
+        <div class="col-lg-12">
+          <div class="col-lg-12 text-center">
+            <a href="callto:508-147-171" class="btn btn-primary btn-lg text-uppercase"><i
+                class="fa fa-phone"></i>Zadzwoń</a>
+
+          </div>
+        </div>
       </div>
     </div>
     </div>
@@ -586,7 +536,7 @@
               <div class="modal-body">
                 <!-- Coach Details Go Here -->
                 <h2 class="text-uppercase">Volvo</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <p class="item-intro text-muted">Posiada: DVD, MIC, AC, WC, 230 V ON BOARD.</p>
                 <img class="img-fluid d-block mx-auto" src="img/coaches/VOLVO/1.jpg" alt="">
                 <img class="img-fluid d-block mx-auto" src="img/coaches/VOLVO/2.jpg" alt="">
                 <img class="img-fluid d-block mx-auto" src="img/coaches/VOLVO/3.jpg" alt="">
@@ -599,17 +549,17 @@
                 <img class="img-fluid d-block mx-auto" src="img/coaches/VOLVO/14.JPG" alt="">
                 <img class="img-fluid d-block mx-auto" src="img/coaches/VOLVO/15.JPG" alt="">
                 <img class="img-fluid d-block mx-auto" src="img/coaches/VOLVO/16.JPG" alt="">
-                <p>Use this area to describe your Coach. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                <!-- <p>Use this area to describe your Coach. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
                   blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
-                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p> -->
                 <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Threads</li>
-                  <li>Category: Illustration</li>
+                  <li>Seats: 49+1+1</li>
+                  <li>Year: 2017-2020</li>
+                  <li>Posiada: DVD, MIC, AC, WC, 230 V ON BOARD</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fa fa-times"></i>
-                  Close </button>
+                  Zamknij </button>
               </div>
             </div>
           </div>
@@ -642,11 +592,11 @@
                 <ul class="list-inline">
                   <li>Seats: 49+1+1</li>
                   <li>Year: 2017</li>
-                  <li>Equipment: DVD, MIC, AC, WC, 230 V ON BOARD</li>
+                  <li>Posiada: DVD, MIC, AC, WC, 230 V ON BOARD</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fa fa-times"></i>
-                  Close </button>
+                  Zamknij </button>
               </div>
             </div>
           </div>
@@ -683,11 +633,11 @@
                 <ul class="list-inline">
                   <li>Seats: 49+1+1</li>
                   <li>Year: 2017</li>
-                  <li>Equipment: DVD, MIC, AC, WC, 230 V ON BOARD</li>
+                  <li>Posiada: DVD, MIC, AC, WC, 230 V ON BOARD</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fa fa-times"></i>
-                  Close </button>
+                  Zamknij </button>
               </div>
             </div>
           </div>
@@ -718,17 +668,17 @@
                 <img class="img-fluid d-block mx-auto" src="img/coaches/MAN/3.jpg" alt="">
                 <img class="img-fluid d-block mx-auto" src="img/coaches/MAN/4.jpg" alt="">
                 <img class="img-fluid d-block mx-auto" src="img/coaches/MAN/5.jpg" alt="">
-                <p>Use this area to describe your Coach. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                <!-- <p>Use this area to describe your Coach. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
                   blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
-                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p> -->
                 <ul class="list-inline">
-                  <li>Date: 2019</li>
-                  <li>Client: Explore</li>
+                  <li>Seats: 49+1+1</li>
+                  <li>Year: 2017</li>
                   <li>Category:DVD, WC, MIC, CAFE BAR, GPS, WIFI, 230 V ON BOARD , </li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fa fa-times"></i>
-                  Close</button>
+                  Zamknij</button>
               </div>
             </div>
           </div>
@@ -762,9 +712,9 @@
                 <img class="img-fluid d-block mx-auto" src="img/coaches/MAN2/8.jpg" alt="">
                 <img class="img-fluid d-block mx-auto" src="img/coaches/MAN2/9.jpg" alt="">
                 <img class="img-fluid d-block mx-auto" src="img/coaches/MAN2/10.jpg" alt="">
-                <p>Use this area to describe your Coach. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                <!-- <p>Use this area to describe your Coach. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
                   blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
-                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p> -->
                 <ul class="list-inline">
                   <li>Date: January 2017</li>
                   <li>Client: Finish</li>
@@ -772,7 +722,7 @@
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fa fa-times"></i>
-                  Close</button>
+                  Zamknij</button>
               </div>
             </div>
           </div>
@@ -805,9 +755,9 @@
                 <img class="img-fluid d-block mx-auto" src="img/coaches/MAN3/8.jpeg" alt="">
                 <img class="img-fluid d-block mx-auto" src="img/coaches/MAN3/9.jpeg" alt="">
                 <img class="img-fluid d-block mx-auto" src="img/coaches/MAN2/10.jpg" alt="">
-                <p>Use this area to describe your Coach. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                <!-- <p>Use this area to describe your Coach. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
                   blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
-                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p> -->
                 <ul class="list-inline">
                   <li>Date: 2019</li>
                   <li>Coaches Count: 1</li>
@@ -815,7 +765,7 @@
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fa fa-times"></i>
-                  Close</button>
+                  Zamknij</button>
               </div>
             </div>
           </div>
@@ -861,10 +811,10 @@
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fa fa-times"></i>
-                  Close</button>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  Zamknij</button>
+                <button class="btn btn-primary" type="button">
                   <i class="fa fa-phone"></i>
-                  Call us</button>
+                  Zadzwoń</button>
               </div>
             </div>
           </div>
@@ -914,7 +864,7 @@
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fa fa-times"></i>
-                  Close</button>
+                  Zamknij</button>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fa fa-phone"></i>
                   Call us</button>
@@ -967,7 +917,7 @@
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fa fa-times"></i>
-                  Close</button>
+                  Zamknij</button>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fa fa-phone"></i>
                   Call us</button>

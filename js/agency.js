@@ -80,35 +80,45 @@
   var aLangKeys = new Array();
   aLangKeys['en'] = new Array();
   aLangKeys['pl'] = new Array();
-  aLangKeys['en']['language'] = 'EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿';
+  aLangKeys['en']['language'] = 'PL 🇵🇱';
   aLangKeys['en']['services'] = 'Services';
   aLangKeys['en']['fleet'] = 'Fleet';
+  aLangKeys['en']['fleetDesc'] = 'We always stay ahead!';
   aLangKeys['en']['about'] = 'About';
   aLangKeys['en']['contact'] = 'Contact';
+  aLangKeys['en']['contactDesc'] = 'Contact';
   aLangKeys['en']['welcome'] = 'Welcome on board!';
   aLangKeys['en']['come'] = 'Come In';
   aLangKeys['en']['travel'] = 'We travel all around the world!';
-  aLangKeys['en']['contact'] = 'Contact';
-  aLangKeys['en']['contact'] = 'Contact';
-  aLangKeys['en']['contact'] = 'Contact';
+  aLangKeys['en']['trips'] = 'Local Trips';
+  aLangKeys['en']['tripDesc'] = 'You have to know that when you travel with us you are always in good hands. We know how much our customers value their comfort and enjoymnet during the ride that is why we come ahead and fullfill newest standart requirements having top quality fleet.';
+  aLangKeys['en']['intl'] = 'International Tours';
+  aLangKeys['en']['intlDesc'] = 'We work with all kinds of travel agencies from countries of Europe, Asia and North America namely Netherlands, China, Germany, USA, France. We provide them best quility service as we always step up to their smallest needs';
+  aLangKeys['en']['🏫'] = 'Schools';
+  aLangKeys['en']['🏫Desc'] = 'Moreover, we work provide our service to local schools and kidnergardens. Mainly we provide them with shuttles to local places of entertainment but it also happend that we travel abroad. We are really flexible!';
 
-  aLangKeys['pl']['language'] = 'PL 🇵🇱';
+  aLangKeys['pl']['language'] = 'EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿';
   aLangKeys['pl']['services'] = 'Usługi';
   aLangKeys['pl']['fleet'] = 'Flota';
+  aLangKeys['pl']['fleetDesc'] = 'Zasze staramy sie nie zostawac z tylu!';
   aLangKeys['pl']['about'] = 'O Nas';
   aLangKeys['pl']['contact'] = 'Kontakt';
   aLangKeys['pl']['welcome'] = 'Witamy na pokładzie!';
   aLangKeys['pl']['come'] = 'Wejdź';
   aLangKeys['pl']['travel'] = 'Podróżujemy dookoła świata!';
+  aLangKeys['pl']['trips'] = 'Lokalne Wycieczki';
+  aLangKeys['pl']['tripDesc'] = 'Korzystanie z naszych autobusow na liniach miedzymiastowych jest naprawde udana decyzja.  Wiemy jak wazny jest comfort i zadowolenie naszych klientow dlatego  chcemy wyjsc temu naprzeciw spelniajac najnowoczesniejsze wymogi Nasze autobusy sa swietne w swojej jakosci..';
+  aLangKeys['pl']['intl'] = 'Wycieczki Miedzynarodowe';
+  aLangKeys['pl']['intlDesc'] = 'Pracuejmy z biurami podrozy z roznych krjaow Europy, Azji i Ameryki  takich jak  Nederlands, China, Germany, France, USA. We  provide them best quility service as we always step up to their smallest needs';
+  aLangKeys['pl']['🏫'] = 'Szkoły';
+  aLangKeys['pl']['🏫Desc'] = 'Ponadto swiadczynmy uslugi transportowe w porozumieniu z lokalnymi  szkolami. Glownie sa to wycieczki lokalne lecz zdarzaja sie wyjazdy poza granice panstwa. Jestesmy naprwde  elastyczni.';
 
-
-
-  var isPolish = true;
+  var switchCountryDisplay = false;
 
   // onclick behavior
   $('.lang').click(function () {
-    var lang = isPolish ? 'en' : 'pl' // obtain language id
-    isPolish = !isPolish
+    var lang = switchCountryDisplay ? 'pl' : 'en' // switch language
+    switchCountryDisplay = !switchCountryDisplay
     // translate all translatable elements
     $('.tr').each(function (i) {
       $(this).text(aLangKeys[lang][$(this).attr('key')]);
