@@ -70,7 +70,7 @@
         multilanguagePage: true
       }, 'google_translate_element');
     }
-    var a = document.querySelector("#google_translate_element select");
+    var a = document.querySelector("#google_translate_element");
     a.selectedIndex = 1;
     a.dispatchEvent(new Event('change'));
   </script>
@@ -90,19 +90,19 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Usługi</a>
+            <a class="nav-link js-scroll-trigger tr" href="#services" key="services">Usługi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Flota</a>
+            <a class="nav-link js-scroll-trigger tr" href="#portfolio" key="fleet">Flota</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">O Nas</a>
+            <a class="nav-link js-scroll-trigger tr" href="#about" key="about">O Nas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
+            <a class="nav-link js-scroll-trigger tr" href="#contact" key="contact">Kontakt</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger button" href="#contact">Jezyk</a>
+            <a class="nav-link js-scroll-trigger lang tr" key="language" style="cursor: pointer;">PL 🇵🇱</a>
           </li>
         </ul>
       </div>
@@ -113,9 +113,9 @@
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
-        <div class="intro-lead-in">Witamy na pokładzie!</div>
+        <div class="intro-lead-in tr" key="welcome">Witamy na pokładzie!</div>
         <!-- <div class="intro-heading text-uppercase">Miło Cie widziec!</div> -->
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Wejdź</a>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger tr" href="#services" key="come">Wejdź</a>
       </div>
     </div>
   </header>
@@ -125,8 +125,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Usługi</h2>
-          <h3 class="section-subheading text-muted">Podróżujemy dookoła świata!</h3>
+          <h2 class="section-heading text-uppercase tr" key="services">Usługi</h2>
+          <h3 class="section-subheading text-muted" key="travel">Podróżujemy dookoła świata!</h3>
         </div>
       </div>
       <div class="row text-center">
@@ -135,8 +135,9 @@
             <i class="fa fa-circle fa-stack-2x text-primary"></i>
             <i class="fa fa-car fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">Lokalne Wycieczki</h4>
-          <p class="text-muted">Korzystanie z naszych autobusow na liniach miedzymiastowych jest naprawde udana decyzja.
+          <h4 class="service-heading" key="trips">Lokalne Wycieczki</h4>
+          <p class="text-muted" key="tripDesc">Korzystanie z naszych autobusow na liniach miedzymiastowych jest naprawde
+            udana decyzja.
             Wiemy jak wazny jest comfort i zadowolenie naszych klientow dlatego
             chcemy wyjsc temu naprzeciw spelniajac najnowoczesniejsze wymogi
             Nasze autobusy sa swietne w swojej jakosci.
@@ -147,8 +148,9 @@
             <i class="fa fa-circle fa-stack-2x text-primary"></i>
             <i class="fa fa-truck fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">Wycieczki Miedzynarodowe</h4>
-          <p class="text-muted">Pracuejmy z biurami podrozy z roznych krjaow Europy, Azji i Ameryki takich jak
+          <h4 class="service-heading" key="intl">Wycieczki Miedzynarodowe</h4>
+          <p class="text-muted" key="intlDesc">Pracuejmy z biurami podrozy z roznych krjaow Europy, Azji i Ameryki
+            takich jak
             Nederlands, China, Germany, France, USA. We
             provide them best quility service as we always step up to their smallest needs</p>
         </div>
@@ -157,8 +159,9 @@
             <i class="fa fa-circle fa-stack-2x text-primary"></i>
             <i class="fa fa-bus fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">Szkoly</h4>
-          <p class="text-muted">Ponadto swiadczynmy uslugi transportowe w porozumieniu z lokalnymi szkolami. Glownie sa
+          <h4 class="service-heading" key="🏫">Szkoly</h4>
+          <p class="text-muted" key="services">Ponadto swiadczynmy uslugi transportowe w porozumieniu z lokalnymi
+            szkolami. Glownie sa
             to wycieczki lokalne lecz zdarzaja sie wyjazdy poza granice panstwa. Jestesmy naprwde elastyczni.</p>
         </div>
       </div>
@@ -505,20 +508,24 @@
                 </div>
               </div>
               <div class="clearfix"></div>
-              <div class="col-lg-6 text-center">
-                <a href="tel:+48695824888"><button class="btn btn-primary btn-xl text-uppercase">Zadzwon</button></a>
-                <!-- <h5>Phone<br /><small><a href="tel:+48695824888">695-824-888</a></small>
-                </h5> -->
+              <div class="row">
+                <div class="col-lg-6 text-center">
+                  <a href="callto:508147171"><button class="btn btn-primary btn-xl text-uppercase">Number</button></a>
+                  <!-- <h5>Phone<br /><small><a href="tel:+48695824888">695-824-888</a></small>
+                  </h5> -->
+                </div>
               </div>
-
-              <div class="col-lg-6 text-center">
-                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase"
-                  type="submit">Wyślij</button>
+              <div class="row">
+                <div class="col-lg-6 text-center">
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase"
+                    type="submit">Wyślij</button>
+                </div>
               </div>
             </div>
-          </form>
         </div>
+        </form>
       </div>
+    </div>
     </div>
   </section>
 

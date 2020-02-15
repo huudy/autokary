@@ -79,66 +79,39 @@
   // preparing language file
   var aLangKeys = new Array();
   aLangKeys['en'] = new Array();
-  aLangKeys['ru'] = new Array();
-  aLangKeys['de'] = new Array();
   aLangKeys['pl'] = new Array();
-  aLangKeys['en']['button'] = 'EN';
-  aLangKeys['en']['peoples'] = 'Peoples >>';
-  aLangKeys['en']['all_list'] = 'All list';
-  aLangKeys['en']['online'] = 'Online';
-  aLangKeys['en']['articles'] = 'Articles >>';
-  aLangKeys['en']['js'] = 'JavaScript';
-  aLangKeys['en']['php'] = 'PHP';
-  aLangKeys['en']['html'] = 'HTML';
-  aLangKeys['en']['css'] = 'CSS';
-  aLangKeys['en']['contact_us'] = 'Contact us';
-  aLangKeys['en']['welcome'] = 'Welcome guests';
-  aLangKeys['ru']['button'] = 'RU';
-  aLangKeys['ru']['peoples'] = '???????????? >>';
-  aLangKeys['ru']['all_list'] = '???? ??????';
-  aLangKeys['ru']['online'] = '? ????';
-  aLangKeys['ru']['articles'] = '?????? >>';
-  aLangKeys['ru']['js'] = '?????????';
-  aLangKeys['ru']['php'] = '???';
-  aLangKeys['ru']['html'] = '????';
-  aLangKeys['ru']['css'] = '???';
-  aLangKeys['ru']['contact_us'] = '???????? ???';
-  aLangKeys['ru']['welcome'] = '????? ??????????';
-  aLangKeys['de']['button'] = 'DE';
-  aLangKeys['de']['peoples'] = '???????????? >>';
-  aLangKeys['de']['all_list'] = '???? ??????';
-  aLangKeys['de']['online'] = '? ????';
-  aLangKeys['de']['articles'] = '?????? >>';
-  aLangKeys['de']['js'] = '?????????';
-  aLangKeys['de']['php'] = '???';
-  aLangKeys['de']['html'] = '????';
-  aLangKeys['de']['css'] = '???';
-  aLangKeys['de']['contact_us'] = '???????? ???';
-  aLangKeys['de']['welcome'] = '????? ??????????';
-  aLangKeys['pl']['button'] = 'PL';
-  aLangKeys['pl']['peoples'] = '???????????? >>';
-  aLangKeys['pl']['all_list'] = '???? ??????';
-  aLangKeys['pl']['online'] = '? ????';
-  aLangKeys['pl']['articles'] = '?????? >>';
-  aLangKeys['pl']['js'] = '?????????';
-  aLangKeys['pl']['php'] = '???';
-  aLangKeys['pl']['html'] = '????';
-  aLangKeys['pl']['css'] = '???';
-  aLangKeys['pl']['contact_us'] = '???????? ???';
-  aLangKeys['pl']['welcome'] = '????? ??????????';
+  aLangKeys['en']['language'] = 'EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿';
+  aLangKeys['en']['services'] = 'Services';
+  aLangKeys['en']['fleet'] = 'Fleet';
+  aLangKeys['en']['about'] = 'About';
+  aLangKeys['en']['contact'] = 'Contact';
+  aLangKeys['en']['welcome'] = 'Welcome on board!';
+  aLangKeys['en']['come'] = 'Come In';
+  aLangKeys['en']['travel'] = 'We travel all around the world!';
+  aLangKeys['en']['contact'] = 'Contact';
+  aLangKeys['en']['contact'] = 'Contact';
+  aLangKeys['en']['contact'] = 'Contact';
 
-  $(document).ready(function () {
-    // onclick behavior
-    $('.lang').click(function () {
-      var lang = $(this).attr('id'); // obtain language id
-      // translate all translatable elements
-      $('.tr').each(function (i) {
-        $(this).text(aLangKeys[lang][$(this).attr('key')]);
-      });
+  aLangKeys['pl']['language'] = 'PL 🇵🇱';
+  aLangKeys['pl']['services'] = 'Usługi';
+  aLangKeys['pl']['fleet'] = 'Flota';
+  aLangKeys['pl']['about'] = 'O Nas';
+  aLangKeys['pl']['contact'] = 'Kontakt';
+  aLangKeys['pl']['welcome'] = 'Witamy na pokładzie!';
+  aLangKeys['pl']['come'] = 'Wejdź';
+  aLangKeys['pl']['travel'] = 'Podróżujemy dookoła świata!';
+
+
+
+  var isPolish = true;
+
+  // onclick behavior
+  $('.lang').click(function () {
+    var lang = isPolish ? 'en' : 'pl' // obtain language id
+    isPolish = !isPolish
+    // translate all translatable elements
+    $('.tr').each(function (i) {
+      $(this).text(aLangKeys[lang][$(this).attr('key')]);
     });
   });
-
-
-
-
 })(jQuery); // End of use strict
