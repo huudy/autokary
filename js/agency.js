@@ -63,19 +63,6 @@
     posterType: 'jpg'
   });
 
-  var languages = {
-    eng: {
-      services: 'Uslugi',
-      desc: 'dOur large charter bus selection is one of the best. Wiktoria knows how important comfort is. That’s why we offer roomy charter buses with up to 57 seats, and for a great price.We are traveling all over Polands bigger cities',
-      school: 'We also provide school shuttles to whole different places. You can check out the whole list and prices please get in touch with us via contact form.'
-    },
-    pl: {
-      services: 'Services'
-    },
-    de: {
-      services: 'Uslugi'
-    }
-  }
   // preparing language file
   var aLangKeys = new Array();
   aLangKeys['en'] = new Array();
@@ -86,9 +73,11 @@
   aLangKeys['en']['fleetDesc'] = 'We always stay ahead!';
   aLangKeys['en']['about'] = 'About';
   aLangKeys['en']['contact'] = 'Contact';
-  aLangKeys['en']['contactDesc'] = 'Contact';
+  aLangKeys['en']['contactDesc'] = 'Do you want to book a trip?';
   aLangKeys['en']['welcome'] = 'Welcome on board!';
   aLangKeys['en']['come'] = 'Come In';
+  aLangKeys['en']['call'] = 'Call us';
+  aLangKeys['en']['close'] = 'Close';
   aLangKeys['en']['travel'] = 'We travel all around the world!';
   aLangKeys['en']['trips'] = 'Local Trips';
   aLangKeys['en']['tripDesc'] = 'You have to know that when you travel with us you are always in good hands. We know how much our customers value their comfort and enjoymnet during the ride that is why we come ahead and fullfill newest standart requirements having top quality fleet.';
@@ -96,6 +85,19 @@
   aLangKeys['en']['intlDesc'] = 'We work with all kinds of travel agencies from countries of Europe, Asia and North America namely Netherlands, China, Germany, USA, France. We provide them best quility service as we always step up to their smallest needs';
   aLangKeys['en']['🏫'] = 'Schools';
   aLangKeys['en']['🏫Desc'] = 'Moreover, we work provide our service to local schools and kidnergardens. Mainly we provide them with shuttles to local places of entertainment but it also happend that we travel abroad. We are really flexible!';
+  aLangKeys['en']['equip'] = 'Equipped with';
+  aLangKeys['en']['seats'] = 'Seats';
+  aLangKeys['en']['year'] = 'Year';
+  aLangKeys['en']['exp'] = 'Experience';
+  aLangKeys['en']['clients'] = 'Clients that we work with';
+  aLangKeys['en']['history'] = 'Company Hisotry 🚌';
+  aLangKeys['en']['historyDesc'] = 'How we developed and got to this point';
+  aLangKeys['en']['beggining'] = 'Very first beggining';
+  aLangKeys['en']['history1'] = 'How we developed and got to this point';
+  aLangKeys['en']['history2'] = 'How we developed and got to this point';
+  aLangKeys['en']['history3'] = 'How we developed and got to this point';
+  aLangKeys['en']['history4'] = 'How we developed and got to this point';
+  aLangKeys['en']['history5'] = 'How we developed and got to this point';
 
   aLangKeys['pl']['language'] = 'EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿';
   aLangKeys['pl']['services'] = 'Usługi';
@@ -103,8 +105,11 @@
   aLangKeys['pl']['fleetDesc'] = 'Zasze staramy sie nie zostawac z tylu!';
   aLangKeys['pl']['about'] = 'O Nas';
   aLangKeys['pl']['contact'] = 'Kontakt';
+  aLangKeys['pl']['contactDesc'] = 'Chcesz z nami pojechać na wycieczkę';
   aLangKeys['pl']['welcome'] = 'Witamy na pokładzie!';
   aLangKeys['pl']['come'] = 'Wejdź';
+  aLangKeys['pl']['call'] = 'Zadzwoń';
+  aLangKeys['pl']['close'] = 'Zamknij';
   aLangKeys['pl']['travel'] = 'Podróżujemy dookoła świata!';
   aLangKeys['pl']['trips'] = 'Lokalne Wycieczki';
   aLangKeys['pl']['tripDesc'] = 'Korzystanie z naszych autobusow na liniach miedzymiastowych jest naprawde udana decyzja.  Wiemy jak wazny jest comfort i zadowolenie naszych klientow dlatego  chcemy wyjsc temu naprzeciw spelniajac najnowoczesniejsze wymogi Nasze autobusy sa swietne w swojej jakosci..';
@@ -112,9 +117,21 @@
   aLangKeys['pl']['intlDesc'] = 'Pracuejmy z biurami podrozy z roznych krjaow Europy, Azji i Ameryki  takich jak  Nederlands, China, Germany, France, USA. We  provide them best quility service as we always step up to their smallest needs';
   aLangKeys['pl']['🏫'] = 'Szkoły';
   aLangKeys['pl']['🏫Desc'] = 'Ponadto swiadczynmy uslugi transportowe w porozumieniu z lokalnymi  szkolami. Glownie sa to wycieczki lokalne lecz zdarzaja sie wyjazdy poza granice panstwa. Jestesmy naprwde  elastyczni.';
+  aLangKeys['pl']['equip'] = 'Posiada';
+  aLangKeys['pl']['seats'] = 'Ilość miejsc';
+  aLangKeys['pl']['year'] = 'Rok';
+  aLangKeys['pl']['exp'] = 'Doświadczeni';
+  aLangKeys['pl']['clients'] = 'Clients that we work with';
+  aLangKeys['pl']['history'] = 'Historia Firmy 🚌';
+  aLangKeys['pl']['historyDesc'] = 'Jak się rozwijaliśmy i jak dotarliśmy tutaj gdzie jesteśmy...';
+  aLangKeys['pl']['beggining'] = 'Sam początek';
+  aLangKeys['pl']['history1'] = 'Zaczelismy z transportem torfu.';
+  aLangKeys['pl']['history2'] = 'How we developed and got to this point';
+  aLangKeys['pl']['history3'] = 'How we developed and got to this point';
+  aLangKeys['pl']['history4'] = 'How we developed and got to this point';
+  aLangKeys['pl']['history5'] = 'How we developed and got to this point';
 
   var switchCountryDisplay = false;
-
   // onclick behavior
   $('.lang').click(function () {
     var lang = switchCountryDisplay ? 'pl' : 'en' // switch language
@@ -124,4 +141,5 @@
       $(this).text(aLangKeys[lang][$(this).attr('key')]);
     });
   });
+
 })(jQuery); // End of use strict
